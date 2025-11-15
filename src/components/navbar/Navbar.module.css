@@ -8,6 +8,7 @@
   backdrop-filter: blur(24px) saturate(120%);
   box-shadow: 0 40px 120px rgba(16, 24, 64, 0.35);
   color: #ffffff;
+  isolation: isolate;
 }
 
 .inner {
@@ -19,6 +20,20 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.wave {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.wave svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: translateY(-18%);
 }
 
 .brand {

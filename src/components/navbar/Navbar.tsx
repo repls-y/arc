@@ -54,6 +54,9 @@ export function Navbar() {
   const sanitizedArcMarkId = useMemo(() => sanitizeId(arcMarkId), [arcMarkId]);
   const sanitizedWaveMaskId = useMemo(() => sanitizeId(waveMaskId), [waveMaskId]);
 
+  const sanitizedBrandId = useMemo(() => sanitizeId(brandId), [brandId]);
+  const sanitizedArcMarkId = useMemo(() => sanitizeId(arcMarkId), [arcMarkId]);
+
   useEffect(() => {
     if (typeof window === 'undefined') {
       return;
